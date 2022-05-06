@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    var(--soft-violet),
+    var(--soft-blue)
+  );
+}
+:root {
+  --very-dark-sat-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --very-dark-gray-blue: hsl(237, 12%, 33%);
+  --dark-grey-blue: hsl(240, 6%, 50%);
+  --light-grey-blue: hsl(240, 5%, 91%);
+}
+h1 {
+  color: var(--very-dark-sat-blue);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+h2,
+p {
+  color: var(--very-dark-gray-blue);
+  font-weight: 400;
+}
+.box {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateX(-50%);
+}
+.container {
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: 20px; */
+  position: relative;
+  border-radius: 3rem;
+  background-color: white;
+  width: 70%;
+  padding: 5rem 5rem 5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.faq-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.faq-block .faq {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-grey-blue);
+}
+P {
+  display: none;
+}
+/* ON DEFAULT, THE PARAGRAPH IN THE ACCORDION IS HIDDEN AND ONLY DISPLAYED WHEN THERE IS A CLASS (open-state) WHICH IS TOGGLED USING JAVAACRIPT */
+.open-state p {
+  display: block;
+}
+.open-state h2 {
+  font-weight: 700;
+}
+.open-state button img {
+  transform: rotate(180deg);
+}
