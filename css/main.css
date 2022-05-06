@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(
     to bottom right,
     var(--soft-violet),
@@ -82,6 +82,9 @@ button {
 }
 P {
   display: none;
+}
+button img {
+  height: 1rem;
 }
 /* ON DEFAULT, THE PARAGRAPH IN THE ACCORDION IS HIDDEN AND ONLY DISPLAYED WHEN THERE IS A CLASS (open-state) WHICH IS TOGGLED USING JAVAACRIPT */
 .open-state p {
