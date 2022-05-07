@@ -10,6 +10,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -85,6 +86,17 @@ P {
 }
 button img {
   height: 1rem;
+}
+
+/* ATTRIBUTION */
+.attribution {
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: hsl(180, 100%, 50%);
+}
+.attribution a {
+  color: #000000;
 }
 /* ON DEFAULT, THE PARAGRAPH IN THE ACCORDION IS HIDDEN AND ONLY DISPLAYED WHEN THERE IS A CLASS (open-state) WHICH IS TOGGLED USING JAVAACRIPT */
 .open-state p {
